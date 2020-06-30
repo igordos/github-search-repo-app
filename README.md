@@ -1,4 +1,4 @@
-# Webpack Pug Boilerplate
+# Github Search Repo App
 
 ## Install
 
