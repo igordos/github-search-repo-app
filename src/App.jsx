@@ -25,7 +25,13 @@ const App = () => {
               <Header.Item>
                 <Nav>
                   <Nav.Item>
-                    <Link to="/">Github src</Link>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/igordos/github-search-repo-app"
+                    >
+                      Github src
+                    </a>
                   </Nav.Item>
                 </Nav>
               </Header.Item>
