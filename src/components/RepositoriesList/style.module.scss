@@ -1,0 +1,40 @@
+.RepositoriesList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    &:not(:first-child) {
+      border-top: 1px solid #eee;
+    }
+  }
+  &__iconBox {
+    margin-right: 8px;
+  }
+  &__iconRepo {
+    width: 16px;
+    height: 16px;
+  }
+  &__info {
+    margin-top: -4px;
+  }
+  &__title {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 16px;
+
+    & a {
+      color: inherit;
+      vertical-align: middle;
+    }
+  }
+
+  &__description {
+    margin: 4px 0 0;
+    font-size: 14px;
+  }
+}

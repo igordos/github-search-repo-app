@@ -1,0 +1,11 @@
+.Container {
+  position: relative;
+  width: 100%;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @include lt-md {
+    padding: 0 16px;
+  }
+}

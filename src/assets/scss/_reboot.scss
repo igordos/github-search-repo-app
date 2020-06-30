@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  color: $main-font-color;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  letter-spacing: 0.02em;
+}
+
+body {
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: auto 1fr auto;
+  -ms-grid-columns: 1fr;
+  min-height: 100vh;
+}
+
+.sprites {
+  display: none;
+}

@@ -1,0 +1,5 @@
+import '../src/assets/scss/index.scss';
+import { configure, addDecorator } from '@storybook/react';
+import StoryRouter from 'storybook-react-router';
+ 
+addDecorator(StoryRouter());

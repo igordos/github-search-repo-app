@@ -1,0 +1,67 @@
+.Header {
+  display: flex;
+  grid-area: header;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 14px;
+  background: $dark-color;
+
+  @include lt-md {
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  &__item {
+    margin-right: 16px;
+
+    @include lt-md {
+      margin-right: 0;
+    }
+  }
+
+  &__btnMenu {
+    display: none;
+    padding: 0;
+    color: #0366d6;
+    font-size: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: initial;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    user-select: none;
+
+    @include lt-md {
+      position: absolute;
+      top: 19px;
+      left: 16px;
+      display: inline-block;
+    }
+  }
+
+  &__hide {
+    display: flex;
+    grid-area: header;
+    align-items: center;
+
+    @include lt-md {
+      display: none;
+
+      & > * {
+        width: 100%;
+      }
+    }
+
+    &_toggle {
+      @include lt-md {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 16px;
+      }
+    }
+  }
+}
