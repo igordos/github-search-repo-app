@@ -1,5 +1,7 @@
 # Github Search Repo App
 
+[Demo](https://igordos.github.io/github-search-repo/)
+
 ## Install
 
 Install nodejs, npm and run "npm install". <br>
